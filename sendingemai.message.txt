@@ -1,0 +1,16 @@
+Lecture App using Salesforce
+
+creating emil to send using Apex.
+
+Public class Sendmail
+{
+public static void sendmail(String Address,String Subject,String Body)
+{
+messaging.singleemailessage mail= new messaging.singleemailmessage();
+Stirng[] toAddresses= new String[]{Address};
+mail.settoaddresses(toAddresses);
+mail.setsubject(subject);
+mail.setplantextbody(body);
+messaging.sendemail(new messaging.singleemailmessage[]{mail});
+}
+}
