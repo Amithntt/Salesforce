@@ -29,4 +29,8 @@ check if you get an email.
 
 Select Class_Date__c,	Description__c,MustComplete__c from Class__c.
 Select FirstName__c,LastName__c,Email__c from Student__c.
+Select Class__r.Name,
+Class__r.Class_Date__c,
+Student__r.FirstName__c,
+Student__r.LastName__c from Class_Student__c order by Class__r.Class_Date__c, Class__r.Name
 
