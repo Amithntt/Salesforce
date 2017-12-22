@@ -23,3 +23,10 @@ String Body= 'Thanks for registering for the class';
 SendEmail.sendMail(address,subject,Body);
 
 check if you get an email.
+
+
+//SOQL query just to check the feilds in class
+
+Select Class_Date__c,	Description__c,MustComplete__c from Class__c.
+Select FirstName__c,LastName__c,Email__c from Student__c.
+
