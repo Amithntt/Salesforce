@@ -14,3 +14,12 @@ mail.setplantextbody(body);
 messaging.sendemail(new messaging.singleemailmessage[]{mail});
 }
 }
+
+//Execute anynomus window code
+String address='amithkulkarni.abi@gmail.com';
+String subject= 'Student confirmation';
+String Body= 'Thanks for registering for the class';
+
+SendEmail.sendMail(address,subject,Body);
+
+check if you get an email.
